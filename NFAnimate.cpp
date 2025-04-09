@@ -11,6 +11,7 @@ class NFAnimator : public emp::web::Animate {
    public: NFAnimator() {
         doc << canvas;
         doc << "Hi!";
+        doc << GetToggleButton("Toggle"); doc << GetStepButton("Step"); // Causes the buttons to appear on the website
 
         for(int x = 0; x < 30; x+=10) {
             for (int y = 0; y < 30; y+=10) {
@@ -58,6 +59,7 @@ class NFAnimator : public emp::web::Animate {
         }
 
     }
+
 
     
 
